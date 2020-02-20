@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-frontend",
-  "version": "1.0.0",
-  "description": "My supreme Nuxt.js project",
+  "name": "vue-engine",
+  "version": "0.1.0",
+  "description": "A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.",
   "author": "ronnidc (RDC)",
   "private": true,
   "scripts": {

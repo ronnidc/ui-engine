@@ -1,4 +1,4 @@
-# Vue Engine
+# Vue Engine / UI Engine
 
 > A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.
 
@@ -20,3 +20,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+______________
+
+*(Removed empty directories: `/store`, `/plugins`, `/middleware`. Add later if needed)*
