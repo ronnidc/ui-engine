@@ -23,4 +23,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ______________
 
-*(Removed empty directories: `/store`, `/plugins`, `/middleware`. Add later if needed)*
+### Notes
+- *(Removed empty directories: `/store`, `/plugins`, `/middleware`. Add later if needed)*
+
+- Perhaps add a `.env` file to the root with `BASE_URL=http://localhost:3000` (don't add it to GIT)
+
+- Some directories in are hidden in the file explorer by `"files.exclude":` in vscode's workspace `settings.json`

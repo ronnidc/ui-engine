@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/package-lock.json": true,
+        "**/example.env": true,
+        "**/.editorconfig": true,
+        "**/.gitignore": true,
+        "**/.nuxt": true,
+        "**/.vscode": true,
+        "**/dist": true
+    },
+}
