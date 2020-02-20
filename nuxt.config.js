@@ -1,6 +1,12 @@
 
 export default {
     mode: 'universal',
+
+    srcDir: 'src/',
+    buildDir: '.nuxt-temp',
+    generate: {
+        dir: 'dist'
+    },
     /*
     ** Headers of the page
     */
