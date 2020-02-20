@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 0 7px;
+    transition: background-color .3s, border .3s, color .3s;
+
+    &--primary  {
+        border: 1px solid #002B3C;
+        color: #002B3C;
+        &:hover {
+            color: #fff;
+            background-color: #002B3C;
+        }
+    }
+    &--secondary {
+        border: 1px solid darkslategray;
+        color: darkslategray;
+        &:hover {
+            color: white;
+            background-color: darkslategray;
+        }
+    }
+}
