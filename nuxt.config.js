@@ -3,9 +3,9 @@ export default {
     mode: 'universal',
 
     srcDir: 'src/',
-    buildDir: '.nuxt-temp',
+    buildDir: '.nuxt-dev',
     generate: {
-        dir: 'dist'
+        dir: './dist'
     },
     /*
     ** Headers of the page
