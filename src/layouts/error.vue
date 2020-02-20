@@ -7,7 +7,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .error-page {
         margin: 0 auto;
         min-height: 100vh;
