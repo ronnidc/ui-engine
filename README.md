@@ -39,7 +39,7 @@ ____
 
 > For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-
+> `style-resources-loader` [good article about style-resources-loader](https://dev.to/lynnewritescode/my-scss-setup-within-a-vue-cli-3-project-4jan)
 
 ### Notes
 - *(Removed empty directories: `/store`, `/plugins`, `/middleware`. Add later if needed)*
