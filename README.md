@@ -58,4 +58,4 @@ ____
 
 ____
 
-> #### Put all your eggs in one basket, and then watch that basket carefully <br /> - *Andrew Carnegie*
+> #### Put all your eggs in one basket, and then watch that basket carefully <br /> - *[Andrew Carnegie](https://en.wikipedia.org/wiki/Andrew_Carnegie)*
