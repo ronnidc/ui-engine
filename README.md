@@ -55,3 +55,7 @@ ____
 - Setup Webpack to output a css-bundle and a js-bundle on `$ npm run build-prod` for the traditional serverside website in production. *Maybe it should work alongside with the `$ nuxt generate` script.*
 
 - Setup a simple and seamless way to build for a local distribution and a deploy for production. The point is that no one should be in doubt about how to produce the different builds. And of course the builds should be lightning-fast.
+
+____
+
+> #### Put all your eggs in one basket, and then watch that basket carefully <br /> - *Andrew Carnegie*
