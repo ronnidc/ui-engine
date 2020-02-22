@@ -14,6 +14,7 @@
     import Navigation from "~/components/Navigation/Navigation.vue";
 
     export default {
+        layout: 'minimal',
         components: {
             Logo, 
             Navigation
