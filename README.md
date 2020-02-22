@@ -52,7 +52,9 @@ ____
 
 - Create some components to make a presentable and meaningful Nuxt POC.
 
-- Setup Webpack to output a css-bundle and a js-bundle on `$ npm run build-prod` for the traditional serverside website in production. *Maybe it should work alongside with the `$ nuxt generate` script.*
+- Setup Webpack to output a css-bundle and a js-bundle on `$ npm run build-prod` for the traditional server-side website in production. *Maybe it should work alongside with the `$ nuxt generate` script.* 
+
+- The bundles should be named __*app.css*__ and __*app.js*__ and not ~~*main.js*~~ or ~~*main.css*~~.
 
 - Setup a simple and seamless way to build for a local distribution and a deploy for production. The point is that no one should be in doubt about how to produce the different builds. And of course the builds should be lightning-fast.
 
