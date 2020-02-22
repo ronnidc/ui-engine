@@ -2,6 +2,7 @@
     <nav class="navigation">
         <Button text="Frontpage" url="/" theme="primary" />
         <Button text="Semler Tech" url="/semler" theme="primary" />
+        <Button text="New" url="/new" theme="primary" />
         <Button text="Documentation" url="https://nuxtjs.org/" theme="secondary" target="_blank" />
     </nav>
 </template>
