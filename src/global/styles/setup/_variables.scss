@@ -1,0 +1,10 @@
+:root {
+    --color-default: rgb(255,0,0);
+    --color-gray: rgb(150,150,150);
+    --color-grey: var(--color-gray);
+    --color-white: rgb(244,244,244);
+    --color-black: rgb(10,10,10);
+    --font-family-primary: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family-secondary: 'Times New Roman', serif;
+}
