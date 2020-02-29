@@ -8,6 +8,7 @@
 <script>
     import { Fragment } from 'vue-fragment'
     export default {
+        layout: 'minimal',
         components: { Fragment }
     }
 </script>
