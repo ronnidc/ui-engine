@@ -12,7 +12,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Build Setup
+## Build Setup 
 
 ``` bash
 
@@ -26,6 +26,8 @@ $ npm run generate
 $ npm run build
 $ npm run start
 ```
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/556a9a47-583d-4fec-b77e-2e3d27452050/deploy-status)](https://app.netlify.com/sites/vue-engine/deploys)
 
 ### .env
 - Be sure to have a `.env` file at the app root with `BASE_URL=yourBaseUrl` It's required for generating a proper build. (don't add it to GIT) *[.env](src/.env)*
