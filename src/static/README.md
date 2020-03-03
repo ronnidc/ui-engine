@@ -9,3 +9,6 @@ Thus you'd want to delete this README.md before deploying to production.
 Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+
+*sw.js is for workbox module. Workbox is a collection of JavaScript libraries for Progressive Web Apps. This module adds full offline support using workbox.
+[pwa.nuxtjs.org/modules/workbox.html](https://pwa.nuxtjs.org/modules/workbox.html)*
