@@ -3,7 +3,8 @@
         <Button text="Frontpage" url="/" theme="primary" />
         <Button text="Semler Tech" url="/semler" theme="primary" />
         <Button text="Other" url="/other" theme="primary" />
-        <Button text="Documentation" url="https://nuxtjs.org/" theme="secondary" target="_blank" />
+        <Button text="Why" url="/why" theme="primary" />
+        <Button text="Documentation" url="https://nuxtjs.org/" theme="secondary" target="_blank" rel="noreferrer" />
     </nav>
 </template>
 
