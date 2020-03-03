@@ -42,9 +42,11 @@ ____
 > `style-resources-loader` [good article about style-resources-loader](https://dev.to/lynnewritescode/my-scss-setup-within-a-vue-cli-3-project-4jan)
 
 ### Notes
-- *(Removed empty directories: `/store`, `/plugins`, `/middleware`. Add later if needed)*
+- *(Removed empty directories: `/store`, `/plugins`, `/middleware`, `assets`. Add later if needed)*
 
 - Some directories in are hidden in the file explorer by `"files.exclude":` in vscode's workspace `settings.json` - including *[settings.json](.vscode/settings.json)*.
+
+- Images should be stored in /src/assets/ where from [they will be compiled](https://nuxtjs.org/guide/assets#webpacked). (Should we rather have them in the component directories?) 
 
 ____
 
