@@ -1,5 +1,12 @@
 .layout-title {
-    color: darkorange;
+    color: var(--color-gray);
 }
 .layout-theme {
+    padding: 2em;
+    font-family: var(--font-family-primary);
+    color: var(--color-orange);
+}
+h2 {
+    margin: 0 auto;
+    max-width: 800px;
 }

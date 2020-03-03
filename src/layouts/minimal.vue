@@ -1,6 +1,6 @@
 <template>
     <div class="layout-theme">
-        <h2 class="layout-title">Minimal Layout (old default)</h2>
+        <h2 class="layout-title">Minimal Layout</h2>
         <nuxt />
     </div>
 </template>

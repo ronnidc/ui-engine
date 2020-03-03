@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
     .error-page {
         margin: 0 auto;
-        min-height: 100vh;
+        min-height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;

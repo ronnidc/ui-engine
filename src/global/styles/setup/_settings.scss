@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html {
+    height: 100%;
     font-family: var(--font-family-default);
     font-size: 16px;
     word-spacing: 1px;
@@ -13,5 +14,12 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 body {
+    height: 100%;
     margin: 0;
+}
+
+// Add height to the Vue required elements
+#__nuxt, 
+#__layout {
+    height: 100%;
 }
