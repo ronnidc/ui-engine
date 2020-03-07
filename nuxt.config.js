@@ -50,7 +50,6 @@ export default {
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
-        '@nuxtjs/pwa',
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
     ],
@@ -77,7 +76,10 @@ export default {
                         name: 'styles',
                         test: /\.(css|vue)$/,
                         chunks: 'all',
-                        enforce: true
+                        enforce: true,
+                    }, 
+                    defaultVendors: {
+                        reuseExistingChunk: true
                     }
                 }
             }
