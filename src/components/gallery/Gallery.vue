@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h2>google maps</h2>
-        <Button text="GoogleMaps" url="#" :onclick="GetGooglemaps" theme="primary" />
+        <h2>Gallery</h2>
+        <Button text="Open Gallery" url="#" :onclick="GetGallery" theme="primary" />
     </div>
 </template>
 <script>
-    import { googlemaps } from './googlemaps.js';
+    import { gallery } from './gallery.js';
     import Button from "~/components/button/Button.vue";
 
     export default {
@@ -13,8 +13,8 @@
             Button
         }, 
         methods: {
-            GetGooglemaps: function() {
-                googlemaps();
+            GetGallery: function() {
+                gallery();
             }
         }
     };
@@ -22,5 +22,5 @@
 </script>
 
 <style lang="scss">
-    @import "./googlemaps.scss";
+    @import "./gallery.scss";
 </style>

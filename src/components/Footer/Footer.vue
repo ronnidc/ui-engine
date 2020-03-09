@@ -13,6 +13,6 @@
     </footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import "./footer.scss";
 </style>

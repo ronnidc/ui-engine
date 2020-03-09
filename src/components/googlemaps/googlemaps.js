@@ -1,4 +1,4 @@
 export function googlemaps() {
     alert('Hello from Googlemaps');
-    console.log('Thank you for clicking on the alert box\'s ok button');
+    console.log('Thank you a lot for clicking on Google Maps alert box\'s ok button');
 }

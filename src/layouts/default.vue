@@ -1,28 +1,38 @@
 <template>
-    <div class="layout-theme">
-        <PageHeader />
+    <div class="layout-default">
+        <Header />
         <main>
             <nuxt />
             <Googlemaps />
         </main>
-        <PageFooter />
+        <Footer />
     </div>
 </template>
 
 <script>
-    import PageHeader from "~/components/header/Header.vue";
-    import PageFooter from "~/components/footer/Footer.vue";
-    import Googlemaps from "~/components/googlemaps/Googlemaps.vue";
+    import Header from "~/components/header/Header.vue";
+    import Footer from "~/components/footer/Footer.vue";
 
     export default {
         components: {
-            PageHeader, 
-            PageFooter, 
-            Googlemaps
+            Header, 
+            Footer
         }
     };
 </script>
 
-<style lang="scss" scoped>
-    @import "./default.scss";
+<style lang="scss">
+
+    .layout-default {
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        
+        main {
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
 </style>

@@ -1,27 +1,20 @@
 <template>
     <Fragment>
-        <h1>This page is using the <em>layout: 'minimal'</em></h1>
-        <h2>This page is also using the <em>vue-fragment</em></h2>
-        <p>This <strong>layout</strong> has no header but this <strong>page</strong> imports the navigation component below</p>
-        <Navigation />
+        <section class="block">
+            <h1 class="title">Another page</h1>
+            <h2 class="subtitle">Something <strong>else</strong>!</h2>
+            <Googlemaps />
+        </section>
     </Fragment>
 </template>
 
 <script>
-    import Navigation from "~/components/navigation/Navigation.vue";
-    import { Fragment } from 'vue-fragment'
+    import { Fragment } from 'vue-fragment';
+    import Googlemaps from "~/components/googlemaps/Googlemaps.vue";
     export default {
-        layout: 'minimal',
         components: { 
-            Fragment, 
-            Navigation
+            Fragment,
+            Googlemaps
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    h1, h2, nav, p {
-        margin: 20px auto;
-        max-width: 800px;
-    }
-</style>
