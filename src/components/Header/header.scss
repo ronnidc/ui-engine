@@ -1,6 +1,10 @@
 .header {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 2em;
     border-bottom: 2px solid darkslategrey;
+
+    @media screen and (min-width:1050px) {
+        display: flex;
+    }
 }

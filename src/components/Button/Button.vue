@@ -1,10 +1,10 @@
 <template>
-    <a :href="url" :class="'button button--' + theme">{{ text }}</a>
+    <a :href="url" :class="'button button--' + theme" v-on:click="onclick">{{ text }}</a>
 </template>
 
 <script>
     export default {
-        props: ['text', 'url', 'theme']
+        props: ['text', 'url', 'theme', 'onclick']
     }
 </script>
 

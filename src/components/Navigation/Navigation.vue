@@ -4,9 +4,8 @@
         <Button :text="message" url="/semler" theme="primary" />
         <Button text="Other" url="/other" theme="primary" />
         <Button text="Why" url="/why" theme="primary" />
-        <Button text="Function" url="#" v-on:click="getNavigation" theme="secondary" />
+        <Button text="Function" url="#" :onclick="getNavigation" theme="secondary" />
         <Button text="Documentation" url="https://nuxtjs.org/" theme="secondary" target="_blank" rel="noreferrer" />
-        <a href="#" v-on:click="getNavigation">function</a>
     </nav>
 </template>
 
@@ -29,7 +28,11 @@
                 // Output script from navigation.js
                 navigation();
             }
-        }
+        }, 
+        created () {
+        }, 
+        beforeUpdate () {
+        },
     };
     
 </script>
