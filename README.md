@@ -52,6 +52,8 @@ ____
 
 - Images should be stored in /src/assets/ where from [they will be compiled](https://nuxtjs.org/guide/assets#webpacked). (Should we rather have them in the component directories?) 
 
+- bundle names [https://github.com/nuxt/nuxt.js/issues/4926](https://github.com/nuxt/nuxt.js/issues/4926)
+
 ____
 
 ## ToDo

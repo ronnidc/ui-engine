@@ -84,5 +84,20 @@ export default {
                 }
             }
         },
+        splitChunks: {
+            pages: true,
+            vendor: false,
+            commons: true,
+            runtime: false,
+            layouts: true
+        },
+        filenames: {
+        app: ({ isDev }) => isDev ? '[name].js' : '[name].js',
+        chunk: ({ isDev }) => isDev ? '[name].js' : '[name].js',
+        css: ({ isDev }) => isDev ? '[name].css' : '[name].css',
+        img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]',
+        font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[contenthash:7].[ext]',
+        video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[contenthash:7].[ext]'
+        }
     }
 }

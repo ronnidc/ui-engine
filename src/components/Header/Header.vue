@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import Logo from "~/components/Logo/Logo.vue";
-    import Navigation from "~/components/Navigation/Navigation.vue";
+    import Logo from "~/components/logo/Logo.vue";
+    import Navigation from "~/components/navigation/Navigation.vue";
 
     export default {
         components: {

@@ -11,7 +11,7 @@
 
 <script>
     import { navigation } from './navigation.js';
-    import Button from "~/components/Button/Button.vue";
+    import Button from "~/components/button/Button.vue";
 
     export default {
         components: {

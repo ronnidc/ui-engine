@@ -6,7 +6,7 @@
 </template>
 <script>
     import { googlemaps } from './googlemaps.js';
-    import Button from "~/components/Button/Button.vue";
+    import Button from "~/components/button/Button.vue";
 
     export default {
         components: {

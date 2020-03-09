@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import Navigation from "~/components/Navigation/Navigation.vue";
+    import Navigation from "~/components/navigation/Navigation.vue";
     import { Fragment } from 'vue-fragment'
     export default {
         layout: 'minimal',
