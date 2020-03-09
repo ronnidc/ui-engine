@@ -5,7 +5,7 @@ export default {
     srcDir: 'src/',
     buildDir: '.nuxt-dev',
     generate: {
-        dir: './dist'
+        dir: './dist', 
     },
     /*
     ** Headers of the page
@@ -32,15 +32,15 @@ export default {
         /* CSS file in the project */
         /*'@/global/styles/global.css',*/
         /* SCSS file in the project */
-        '@/global/styles/global.scss'
+        '@/global/styles/global.scss',
     ],
-    render: {
-        bundleRenderer: {
-            shouldPreload: (file, type) => {
-            return ['script', 'style', 'font'].includes(type)
-            }
-        }
-    },
+    // render: {
+    //     bundleRenderer: {
+    //         shouldPreload: (file, type) => {
+    //         return ['script', 'style', 'font'].includes(type)
+    //         }
+    //     }
+    // },
     /*
     ** Plugins to load before mounting the App
     */
@@ -80,22 +80,22 @@ export default {
             splitChunks: {
                 cacheGroups: {
                     styles: {
-                        name: 'components',
                         test: /\.(css|vue)$/,
-                        chunks: 'all',
+                        chunks: 'async',
                         enforce: true,
                     }, 
                     defaultVendors: {
-                        reuseExistingChunk: true, 
+                        name: '_bundle'
                     }
                 }
             }
         },
         splitChunks: {
-            pages: true,
+            pages: false,
             vendor: true,
             commons: true,
-            layouts: true
+            layouts: false, 
+            runtime: true
         },
         filenames: {
         app: ({ isDev }) => isDev ? '[name].js' : '[name].js',
