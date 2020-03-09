@@ -34,6 +34,13 @@ export default {
         /* SCSS file in the project */
         '@/global/styles/global.scss'
     ],
+    render: {
+        bundleRenderer: {
+            shouldPreload: (file, type) => {
+            return ['script', 'style', 'font'].includes(type)
+            }
+        }
+    },
     /*
     ** Plugins to load before mounting the App
     */
@@ -73,22 +80,21 @@ export default {
             splitChunks: {
                 cacheGroups: {
                     styles: {
-                        name: 'styles',
+                        name: 'components',
                         test: /\.(css|vue)$/,
                         chunks: 'all',
                         enforce: true,
                     }, 
                     defaultVendors: {
-                        reuseExistingChunk: true
+                        reuseExistingChunk: true, 
                     }
                 }
             }
         },
         splitChunks: {
             pages: true,
-            vendor: false,
+            vendor: true,
             commons: true,
-            runtime: false,
             layouts: true
         },
         filenames: {

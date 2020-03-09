@@ -66,6 +66,17 @@ ____
 
 - Setup a simple and seamless way to build for a local distribution and a deploy for production. The point is that no one should be in doubt about how to produce the different builds. And of course the builds should be lightning-fast.
 
+- Have a look at [css modules in nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will it work with the backenders markup?
 ____
 
 > #### Put all your eggs in one basket, and then watch that basket carefully <br /> - *[Andrew Carnegie](https://en.wikipedia.org/wiki/Andrew_Carnegie)*
+
+## Status:
+
+The following files is to be included in production:
+
+```html
+dist/_nuxt/layouts/default.js // Component js
+dist/_nuxt/app.css // Global styles
+dist/_nuxt/components.css // Component styles
+```
