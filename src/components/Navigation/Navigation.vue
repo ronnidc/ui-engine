@@ -9,9 +9,9 @@
         <nuxt-link to="/other" class="navigation__link">
             Other
         </nuxt-link>
-        <a href="https://nuxtjs.org/" class="navigation__link" target="_blank" rel="noreferrer">
+        <nuxt-link to="/documentation" class="navigation__link">
             Documentation
-        </a>
+        </nuxt-link>
     </nav>
 </template>
 
