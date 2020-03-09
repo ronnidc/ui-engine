@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Gallery</h2>
-        <Button text="Open Gallery" url="#" :onclick="GetGallery" theme="primary" />
+        <Button text="Open Gallery" url="#" v-on:click.native="GetGallery" theme="primary" />
     </div>
 </template>
 <script>

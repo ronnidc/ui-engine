@@ -3,7 +3,6 @@
         <Header />
         <main>
             <nuxt />
-            <Googlemaps />
         </main>
         <Footer />
     </div>
