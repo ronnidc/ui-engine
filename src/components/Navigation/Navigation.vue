@@ -1,19 +1,23 @@
 <template>
     <nav class="navigation">
-        <Button text="Frontpage" url="/" theme="primary" />
-        <Button :text="buttonText" url="/semler" theme="primary" />
-        <Button text="Other" url="/other" theme="primary" />
-        <Button text="Documentation" url="https://nuxtjs.org/" theme="secondary" target="_blank" rel="noreferrer" />
+        <nuxt-link to="/" class="navigation__link">
+            Frontpage
+        </nuxt-link>
+        <nuxt-link to="/semler" class="navigation__link">
+            {{ buttonText }}
+        </nuxt-link>
+        <nuxt-link to="/other" class="navigation__link">
+            Other
+        </nuxt-link>
+        <a href="https://nuxtjs.org/" class="navigation__link" target="_blank" rel="noreferrer">
+            Documentation
+        </a>
     </nav>
 </template>
 
 <script>
-    import Button from "~/components/button/Button.vue";
 
     export default {
-        components: {
-            Button
-        },
         data () {
             return {
                 buttonText: 'Mobility Tech'
