@@ -1,16 +1,14 @@
 <template>
-    <Fragment>
+    <main role="main">
         <Heading :title="heading.title" :subtitle="heading.subtitle" />
-    </Fragment>
+    </main>
 </template>
 
 <script>
-    import { Fragment } from 'vue-fragment';
     import Heading from "~/components/heading/Heading.vue";
 
     export default {
         components: {
-            Fragment, 
             Heading
         }, 
         data () {

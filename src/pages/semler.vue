@@ -1,17 +1,15 @@
 <template>
-    <Fragment>
+    <main role="main">
         <Heading :title="heading.title" :subtitle="heading.subtitle" />
         <Gallery />
-    </Fragment>
+    </main>
 </template>
 
 <script>
-    import { Fragment } from 'vue-fragment';
     import Heading from "~/components/heading/Heading.vue";
     import Gallery from "~/components/gallery/Gallery.vue";
     export default {
         components: { 
-            Fragment, 
             Gallery, 
             Heading
         }, 

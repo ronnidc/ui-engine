@@ -1,17 +1,15 @@
 <template>
-    <Fragment>
+    <main role="main">
         <Heading :title="heading.title" :subtitle="heading.subtitle" />
         <Googlemaps />
-    </Fragment>
+    </main>
 </template>
 
 <script>
-    import { Fragment } from 'vue-fragment';
     import Heading from "~/components/heading/Heading.vue";
     import Googlemaps from "~/components/googlemaps/Googlemaps.vue";
     export default {
         components: { 
-            Fragment,
             Googlemaps, 
             Heading
         }, 
