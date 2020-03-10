@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>google maps</h2>
-        <a href="#" v-on:click="GetGooglemaps" class="button button--primary">GoogleMaps</a>
+        <a v-on:click="GetGooglemaps" class="button button--primary">GoogleMaps</a>
     </div>
 </template>
 <script>

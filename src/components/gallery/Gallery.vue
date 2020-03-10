@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Gallery</h2>
-        <a href="#" v-on:click="GetGallery" class="button button--primary">Open Gallery</a>
+        <a v-on:click="GetGallery" class="button button--primary">Open Gallery</a>
     </div>
 </template>
 <script>
