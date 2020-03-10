@@ -3,7 +3,6 @@ export default {
     mode: 'universal',
 
     srcDir: 'src/',
-    buildDir: '.nuxt-dev',
     generate: {
         dir: './dist', 
     },

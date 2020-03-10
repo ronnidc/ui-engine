@@ -3,7 +3,6 @@ export default {
     mode: 'universal',
 
     srcDir: 'src/',
-    buildDir: '.nuxt-dev',
     /*
     ** Headers of the page
     */
@@ -21,7 +20,7 @@ export default {
     /*
     ** Customize the progress-bar color
     */
-    loading: { color: '#fff' },
+    loading: { color: '#f00' },
     /*
     ** Global CSS
     */
