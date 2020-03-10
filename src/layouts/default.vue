@@ -1,7 +1,7 @@
 <template>
     <div class="layout-default">
         <Header />
-        <main>
+        <main role="main">
             <nuxt />
         </main>
         <Footer />
@@ -26,12 +26,6 @@
         min-height: 100%;
         display: grid;
         grid-template-rows: auto 1fr auto;
-        
-        main {
-            display: flex;
-            text-align: center;
-            align-items: center;
-        }
     }
 
 </style>

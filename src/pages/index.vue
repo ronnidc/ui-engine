@@ -1,18 +1,25 @@
 <template>
     <Fragment>
-        <section class="block">
-            <h1 class="title">SMC Lorem ipsum</h1>
-            <h2 class="subtitle">A supreme <strong>Nuxt</strong> project</h2>
-        </section>
+        <Heading :title="heading.title" :subtitle="heading.subtitle" />
     </Fragment>
 </template>
 
 <script>
-    import { Fragment } from 'vue-fragment'
+    import { Fragment } from 'vue-fragment';
+    import Heading from "~/components/heading/Heading.vue";
 
     export default {
         components: {
-            Fragment
+            Fragment, 
+            Heading
+        }, 
+        data () {
+            return {
+                heading: {
+                    title: 'SMC Lorem ipsum', 
+                    subtitle: 'A supreme Nuxt project'
+                }
+            }
         }
     };
 </script>

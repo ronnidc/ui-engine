@@ -1,4 +1,8 @@
 .googlemaps {
-    background: lightskyblue;
-    color: slateblue;
+    color: var(--color-default);
+    padding: 1em;
+
+    .container {
+        text-align: center;
+    }
 }

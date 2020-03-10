@@ -7,6 +7,10 @@ export default {
     generate: {
         dir: './dist', 
     },
+
+    router: {
+        //base: '/poc/ui-engine/'
+    },
     /*
     ** Headers of the page
     */

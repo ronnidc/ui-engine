@@ -1,4 +1,8 @@
 .gallery {
-    background: darkorange;
-    color: white;
+    color: var(--color-default);
+    padding: 1em;
+
+    .container {
+        text-align: center;
+    }
 }

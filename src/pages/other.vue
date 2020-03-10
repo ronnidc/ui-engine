@@ -1,20 +1,27 @@
 <template>
     <Fragment>
-        <section class="block">
-            <h1 class="title">Another page</h1>
-            <h2 class="subtitle">Something <strong>else</strong>!</h2>
-            <Googlemaps />
-        </section>
+        <Heading :title="heading.title" :subtitle="heading.subtitle" />
+        <Googlemaps />
     </Fragment>
 </template>
 
 <script>
     import { Fragment } from 'vue-fragment';
+    import Heading from "~/components/heading/Heading.vue";
     import Googlemaps from "~/components/googlemaps/Googlemaps.vue";
     export default {
         components: { 
             Fragment,
-            Googlemaps
+            Googlemaps, 
+            Heading
+        }, 
+        data () {
+            return {
+                heading: {
+                    title: 'Another page', 
+                    subtitle: 'Something else!'
+                }
+            }
         }
     }
 </script>

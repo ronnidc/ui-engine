@@ -1,8 +1,10 @@
 <template>
-    <div>
-        <h2>google maps</h2>
-        <a v-on:click="GetGooglemaps" class="button button--primary">GoogleMaps</a>
-    </div>
+    <section class="googlemaps">
+        <div class="container">
+            <h2>google maps</h2>
+            <a v-on:click="GetGooglemaps" class="button button--primary">GoogleMaps</a>
+        </div>
+    </section>
 </template>
 <script>
     import { googlemaps } from './googlemaps.js';

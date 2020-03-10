@@ -1,0 +1,17 @@
+.heading {
+    text-align: center;
+    .title {
+        font-family: var(--font-family-primary);
+        font-weight: 300;
+        font-size: 100px;
+        letter-spacing: 1px;
+    }
+    
+    .subtitle {
+        font-family: var(--font-family-primary);
+        font-weight: 300;
+        font-size: 42px;
+        word-spacing: 5px;
+        padding-bottom: 15px;
+    }
+}
