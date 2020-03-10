@@ -7,11 +7,11 @@
 </template>
 <script>
     import { googlemaps } from './googlemaps.js';
-    import Button from "~/components/button/Button.vue";
+    //import Button from "~/components/button/Button.vue";
 
     export default {
         components: {
-            Button
+            //Button
         }, 
         methods: {
             GetGooglemaps: function() {
