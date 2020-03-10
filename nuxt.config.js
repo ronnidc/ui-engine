@@ -4,13 +4,6 @@ export default {
 
     srcDir: 'src/',
     buildDir: '.nuxt-dev',
-    generate: {
-        dir: './dist', 
-    },
-
-    router: {
-        //base: '/poc/ui-engine/'
-    },
     /*
     ** Headers of the page
     */
@@ -33,18 +26,8 @@ export default {
     ** Global CSS
     */
     css: [
-        /* CSS file in the project */
-        /*'@/global/styles/global.css',*/
-        /* SCSS file in the project */
         '@/global/styles/global.scss',
     ],
-    // render: {
-    //     bundleRenderer: {
-    //         shouldPreload: (file, type) => {
-    //         return ['script', 'style', 'font'].includes(type)
-    //         }
-    //     }
-    // },
     /*
     ** Plugins to load before mounting the App
     */
@@ -77,37 +60,5 @@ export default {
         /*
         ** You can extend webpack config here
         */
-        extend(config, ctx) {
-        }, 
-        extractCSS: process.env.NODE_ENV === 'production',
-        optimization: {
-            splitChunks: {
-                cacheGroups: {
-                    styles: {
-                        test: /\.(css|vue)$/,
-                        chunks: 'async',
-                        enforce: true,
-                    }, 
-                    defaultVendors: {
-                        name: '_bundle'
-                    }
-                }
-            }
-        },
-        splitChunks: {
-            pages: false,
-            vendor: true,
-            commons: true,
-            layouts: false, 
-            runtime: true
-        },
-        filenames: {
-        app: ({ isDev }) => isDev ? '[name].js' : '[name].js',
-        chunk: ({ isDev }) => isDev ? '[name].js' : '[name].js',
-        css: ({ isDev }) => isDev ? '[name].css' : '[name].css',
-        img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]',
-        font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[contenthash:7].[ext]',
-        video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[contenthash:7].[ext]'
-        }
     }
 }
