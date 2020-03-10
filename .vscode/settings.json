@@ -6,7 +6,6 @@
         "**/.gitignore": true,
         "**/.nuxt": true,
         "**/.nuxt-dev": true,
-        "**/.vscode": true,
-        "**/dist": false
+        "**/.vscode": true
     },
 }

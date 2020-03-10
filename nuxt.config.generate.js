@@ -5,7 +5,7 @@ export default {
     srcDir: 'src/',
     buildDir: '.nuxt-dev',
     generate: {
-        dir: './dist__', 
+        dir: './dist', 
     },
 
     router: {
@@ -35,13 +35,6 @@ export default {
     css: [
         '@/global/styles/global.scss',
     ],
-    render: {
-        bundleRenderer: {
-            shouldPreload: (file, type) => {
-            return ['script', 'style', 'font'].includes(type)
-            }
-        }
-    },
     /*
     ** Plugins to load before mounting the App
     */
@@ -71,12 +64,7 @@ export default {
     ** Build configuration
     */
     build: {
-        /*
-        ** You can extend webpack config here
-        */
-        extend(config, ctx) {
-        }, 
-        extractCSS: process.env.NODE_ENV === 'production',
+        extractCSS: true,
         optimization: {
             splitChunks: {
                 cacheGroups: {
@@ -84,29 +72,14 @@ export default {
                         name: 'components',
                         test: /\.(css|vue)$/,
                         chunks: 'all',
-                        enforce: true,
-                    }, 
-                    defaultVendors: {
-                        reuseExistingChunk: true, 
-                        //name: '_bundle'
+                        enforce: true
                     }
                 }
             }
         },
-        splitChunks: {
-            pages: true,
-            layouts: true, 
-            vendor: true,
-            commons: true,
-            //runtime: true
-        },
         filenames: {
-        app: ({ isDev }) => isDev ? '[name].first.js' : '[name].js',
-        chunk: ({ isDev }) => isDev ? '[name].one.js' : '[name].scripts.prod.js',
-        css: ({ isDev }) => isDev ? '[name].01.css' : '[name].styles.prod.css',
-        img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]',
-        font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[contenthash:7].[ext]',
-        video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[contenthash:7].[ext]'
+            chunk: ({ isDev }) => isDev ? '[name].js' : '[name].scripts.prod.js',
+            css: ({ isDev }) => isDev ? '[name].css' : '[name].styles.prod.css',
         }
     }
 }

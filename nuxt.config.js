@@ -57,6 +57,9 @@ export default {
     ** Build configuration
     */
     build: {
+        analyze: {
+            analyzerMode: 'static'
+        },
         /*
         ** You can extend webpack config here
         */

@@ -76,7 +76,8 @@ ____
 The following files is to be included in production:
 
 ```html
-dist/_nuxt/layouts/default.js // Component js
-dist/_nuxt/app.css // Global styles
-dist/_nuxt/components.css // Component styles
+dist/_nuxt/pages/other.scripts.prod.js // components on the page "other"
+dist/_nuxt/pages/semler.scripts.prod.js // components on the page "semler"
+dist/_nuxt/app.styles.prod.css // Global styles
+dist/_nuxt/components.styles.prod.css // Component styles
 ```
