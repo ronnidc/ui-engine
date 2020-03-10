@@ -44,8 +44,6 @@ export default {
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
-        // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv',
     ],
     /*
     ** Axios module configuration
@@ -57,11 +55,5 @@ export default {
     ** Build configuration
     */
     build: {
-        analyze: {
-            analyzerMode: 'static'
-        },
-        /*
-        ** You can extend webpack config here
-        */
     }
 }
