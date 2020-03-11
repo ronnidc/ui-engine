@@ -1,6 +1,6 @@
 <template>
     <main role="main">
-        <Heading :title="heading.title" :subtitle="heading.subtitle" />
+        <Heading :title="heading.title" :subtitle="heading.subtitle" :textsize="heading.titleSize" />
     </main>
 </template>
 
@@ -14,8 +14,9 @@
         data () {
             return {
                 heading: {
-                    title: 'SMC Lorem ipsum', 
-                    subtitle: 'A supreme Nuxt project'
+                    title: 'ui-engine', 
+                    subtitle: 'A prototyping tool based on Vue.js & Nuxt', 
+                    titleSize: 'huge'
                 }
             }
         }
