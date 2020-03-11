@@ -4,7 +4,7 @@ export default {
 
     srcDir: 'src/',
     generate: {
-        dir: './dist', 
+        dir: './dist/generated-static-site', 
     },
 
     router: {
