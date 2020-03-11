@@ -1,22 +1,20 @@
 {
-  "name": "vue-engine",
+  "name": "ui-engine",
   "version": "0.1.0",
   "description": "A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.",
-  "author": "ronnidc (RDC)",
-  "private": true,
+  "author": "ronnidc",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate -c nuxt.config.generate.js",
-    "buildprod": "webpack --config webpack.config.prod.js"
+    "build-nuxt": "nuxt build",
+    "start-nuxt": "nuxt start",
+    "generate": "nuxt generate -c nuxt.config.generate.build.js",
+    "build": "npm run generate"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2",
-    "webpack-cli": "^3.3.11"
+    "sass-loader": "^8.0.2"
   }
 }
