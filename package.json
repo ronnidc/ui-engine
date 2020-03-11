@@ -1,8 +1,10 @@
 {
   "name": "ui-engine",
   "version": "0.1.0",
-  "description": "A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.",
+  "repository": "https://github.com/ronnidc/ui-engine/",
+  "description": "A SSG for prototyping the UI & generate asset bundles for production. Based on Vue, Nuxt and Webpack.",
   "author": "ronnidc & mortenhoffmanndoff",
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build-nuxt": "nuxt build",
