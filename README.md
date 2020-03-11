@@ -1,6 +1,6 @@
-# UI Engine (nuxt)
+# UI Engine
 
-> A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.
+> A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
 ## Developemnt
 
