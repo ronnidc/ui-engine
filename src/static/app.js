@@ -1,4 +1,5 @@
 console.log('Hello');
+import '../global/styles/global.scss';
 
 const names = [
     'Peter',
