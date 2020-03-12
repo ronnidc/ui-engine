@@ -14,7 +14,7 @@ module.exports = {
 
     // Path for bundles and filename for the javascript bundle:
     output: {
-        path: path.resolve(__dirname, 'dist/bundle'),
+        path: path.resolve(__dirname, 'dist/bundles'),
         filename: 'bundle.prod.js'
     },
 
@@ -77,7 +77,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "bundle.prod.css"
         }), 
-        // Clean the build directory:
+        // Clean the output.path directory:
         new CleanWebpackPlugin()
     ],
 };
