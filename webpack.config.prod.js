@@ -1,11 +1,12 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // This is the main configuration object.
 module.exports = {
 
-    // Default mode is production. Alternatively 'developemnt' or 'none'.
+    // Default mode is 'production'. Alternatively 'development' or 'none'.
     mode: 'production',
 
     // Path to your entry point. From here Webpack will begin its work.
@@ -72,11 +73,11 @@ module.exports = {
     },
 
     plugins: [
-
         // Filename for the stylesheet bundle:
         new MiniCssExtractPlugin({
             filename: "bundle.prod.css"
-        })
-
+        }), 
+        // Clean the build directory:
+        new CleanWebpackPlugin()
     ],
 };
