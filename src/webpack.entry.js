@@ -1,12 +1,6 @@
-console.log('Hello Morten & Ronni');
+// Inport all javascript-files from components:
+import modules from "./components/**/*.js";
 
+// Import all SCSS styles:
 import './global/styles/index.scss';
-
-const names = [
-    'Peter',
-    'Morten',
-    'Mads',
-    'Tommy'
-  ];
-  
-  console.log(names.map(material => names.length));
+// (All component styles are dynamically loadet from index.scss)

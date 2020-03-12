@@ -23,12 +23,19 @@ module.exports = {
                 // Apply rule for .javascript files:
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
+                use: [
+                    {
+                        // 1. This loader transpiles ES6 to ES5 (for IE11):
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
+                    }, 
+                    {
+                        // 1. This loader dynamically looks for all *.js files:
+                        loader: 'import-glob'
                     }
-                }
+                ],
             }, 
             {
                 // Apply rule for .sass, .scss or .css files:
