@@ -1,14 +1,17 @@
-// Webpack uses this to work with directories
 const path = require('path');
+const globImporter = require('node-sass-glob-importer');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-// This is main configuration object.
+// This is the main configuration object.
 module.exports = {
 
-    // Path to your entry point. From this file Webpack will begin his work
-    entry: './src/static/app.js',
+    // Default mode is production. Alternatively 'developemnt' or 'none'.
+    mode: 'production',
 
-    // Path and filename of your result bundle.
+    // Path to your entry point. From here Webpack will begin its work.
+    entry: './src/webpack.entry.js',
+
+    // Path for bundles and filename for the javascript bundle:
     output: {
         path: path.resolve(__dirname, 'dist/bundle'),
         filename: 'bundle.prod.js'
@@ -17,6 +20,7 @@ module.exports = {
     module: {
         rules: [
             {
+                // Apply rule for .javascript files:
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 use: {
@@ -27,32 +31,32 @@ module.exports = {
                 }
             }, 
             {
-                // Apply rule for .sass, .scss or .css files
+                // Apply rule for .sass, .scss or .css files:
                 test: /\.(sa|sc|c)ss$/,
           
                 // Set loaders to transform files.
-                // Loaders are applying from right to left(!)
-                // The first loader will be applied after others
+                // Loaders are applied from right to left(!)
                 use: [
                     {
-                        // After all CSS loaders we use plugin to do his work.
-                        // It gets all transformed CSS and extracts it into separate
-                        // 4. single bundled file
+                        // 4. This loader extracts css into a separate bundle:
                         loader: MiniCssExtractPlugin.loader
                     }, 
                     {
-                        // 3. This loader resolves url() and @imports inside CSS
-                        loader: "css-loader",
+                        // 3. This loader resolves url's and @imports in CSS:
+                        loader: "css-loader"
                     },
                     {
-                        // 2. Then we apply postCSS fixes like autoprefixer and minifying
+                        // 2. This loader apply postCSS fixes like autoprefixer and minifying:
                         loader: "postcss-loader"
                     },
                     {
-                        // 1. First we transform SASS to standard CSS
+                        // 1. First loader transforms SASS to vanilla CSS:
                         loader: "sass-loader",
                         options: {
-                            implementation: require("sass")
+                            sassOptions: {
+                                // 1. This importer dynamically looks for all *.scss files:
+                                importer: globImporter()
+                            }
                         }
                     }
                 ]
@@ -62,12 +66,10 @@ module.exports = {
 
     plugins: [
 
+        // Filename for the stylesheet bundle:
         new MiniCssExtractPlugin({
             filename: "bundle.prod.css"
         })
 
     ],
-
-    // Default mode for Webpack is production.
-    mode: 'development'
 };

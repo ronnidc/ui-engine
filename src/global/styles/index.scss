@@ -1,3 +1,4 @@
+// Settings: 
 @import "setup/settings";
 @import "setup/variables";
 @import "setup/typography";
@@ -5,3 +6,6 @@
 // Elements:
 @import "elements/container";
 @import "elements/button";
+
+// Components: 
+@import '../../components/**/*.scss';

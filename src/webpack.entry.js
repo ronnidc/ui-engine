@@ -1,5 +1,6 @@
-console.log('Hello');
-import '../global/styles/global.scss';
+console.log('Hello Morten & Ronni');
+
+import './global/styles/index.scss';
 
 const names = [
     'Peter',
