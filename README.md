@@ -2,9 +2,9 @@
 
 > A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
-## Development
+## Develop prototypes
 
-Build prototypes with Nuxt
+Create prototypes fast with Nuxt vue-templates, SCSS, ES6 - using Hot Module Repacement. 
 
 ``` bash
 # Install dependencies
@@ -14,7 +14,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Build scripts for production
+## Build for production
 
 Genrate HTML output and build bundles for production
 
@@ -26,11 +26,11 @@ $ npm run setup
 # Build minified css & js bundles for production
 $ npm run build-prod
 
-# Static Generated Prototype (Pre-rendered) to /dist/
-$ npm run generate
-
 # (Build css & js bundles without minification)
 $ npm run build-dev
+
+# Static Generated Prototype (Pre-rendered) to /dist/
+$ npm run generate
 
 ```
 
@@ -49,21 +49,20 @@ For this to work, the `package-scripts.json` file should be moved outside of `ui
 
 If the parent directory already has a package.json file the script sections content from `ui-engine/package-scripts.json` can be copied to the existing `/package.json`.
 
-____
-### Nuxt
-
-> For detailed explanation: [Nuxt.js docs](https://nuxtjs.org).
+*The point is - with this setup it doesn't matter if you run the npm scripts from the solution root or from the ui-engine directory. Both ways will do the exactely same thing.*
 
 ____
 
-### Notes
+## Notes
 - Some directories are hidden in the VS Code file explorer by `"files.exclude":` in `settings.json` - including *[settings.json](.vscode/settings.json)*.
 
 - Have a look at [css modules in nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will it work with the backenders markup?
 
-____
+### Nuxt
 
-## Status - ui-engine deployment
+> For detailed explanation: [Nuxt.js docs](https://nuxtjs.org).
+
+### Status - ui-engine deployment
 
 The ui-engine has an online preview with continuous deployment
 
