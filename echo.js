@@ -17,3 +17,28 @@ const ansiStyles = opts.map(function (opt) {
 });
 
 console.log('%s%s%s', ansiStyles.join(''), mssg, '\x1b[0m');
+
+/*
+┌─────────────────────────┐
+│ Code  Font Color        │
+├─────────────────────────┤
+│  39   Default           │
+│  30   Black             │
+│  31   Red               │
+│  32   Green             │
+│  33   Yellow            │
+│  34   Blue              │
+│  35   Magenta           │
+│  36   Cyan              │
+│  37   Light Gray        │
+│  90   Dark Gray         │
+│  91   Light Red         │
+│  92   Light Green       │
+│  93   Light Yellow      │
+│  94   Light Blue        │
+│  95   Light Magenta     │
+│  96   Light Cyan        │
+│  97   White Cyan        │
+└─────────────────────────┘
+https://stackoverflow.com/a/50275198/1139704
+*/
