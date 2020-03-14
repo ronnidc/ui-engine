@@ -10,6 +10,8 @@
     "build-dev": "cd ui-engine && npm run build-dev",
     "build-prod": "cd ui-engine && npm run build-prod",
     "build": "cd ui-engine && npm run build",
-    "clean": "cd ui-engine && npm run clean"
+    "clean": "cd ui-engine && npm run clean",
+    "ssr-build": "cd ui-engine && npm run ssr-build",
+    "ssr-start": "cd ui-engine && npm run ssr-start"
   }
 }

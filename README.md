@@ -36,12 +36,18 @@ npm run generate
 
 ```
 
-Optional tasks
+Optional scripts
 
 ``` bash
 
 # Delete the dist directory
 npm run clean
+
+# Build Server-Side Rendered (Universal SSR)
+npm run ssr-build
+
+# Start Server-Side Rendered preview (Universal SSR)
+npm run ssr-start
 
 ```
 
