@@ -11,8 +11,8 @@
     "build-nuxt": "nuxt build",
     "start-nuxt": "nuxt start",
     "generate": "nuxt generate",
-    "build-dev": "webpack --config webpack.config.dev.js",
-    "build-prod": "webpack --config webpack.config.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js",
     "build": "echo \"No build mode specified. Please run build-prod or build-dev. Now running a production build as fallback:\" && npm run build-prod"
   },
   "dependencies": {
@@ -34,6 +34,12 @@
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
-  }
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }, 
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions", 
+    "not dead"
+  ]
 }

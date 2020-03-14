@@ -1,21 +1,20 @@
+// Webpack DEV
+
+// Require dependencies: 
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
+const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // This is the main configuration object.
 module.exports = {
 
-    // Default mode is 'production'. Alternatively 'development' or 'none'.
-    mode: 'production',
-
-    // Path to your entry point. From here Webpack will begin its work.
-    entry: './src/webpack.entry.js',
-
     // Path for bundles and filename for the javascript bundle:
     output: {
         path: path.resolve(__dirname, 'dist/bundles'),
-        filename: 'bundle.prod.js'
+        filename: 'bundle.[name].js' 
+        // (The [name] is related to entry.name in webpack.prod & webpack.dev)
     },
 
     module: {
@@ -26,14 +25,14 @@ module.exports = {
                 exclude: /(node_modules)/,
                 use: [
                     {
-                        // 1. This loader transpiles ES6 to ES5 (for IE11):
+                        // 2. This loader transpiles ES6 to ES5 (for IE11):
                         loader: 'babel-loader',
                         options: {
                             presets: ['@babel/preset-env']
                         }
                     }, 
                     {
-                        // 1. This loader dynamically looks for all *.js files:
+                        // 1. This loader dynamically imports all *.js files:
                         loader: 'import-glob'
                     }
                 ],
@@ -55,7 +54,10 @@ module.exports = {
                     },
                     {
                         // 2. This loader apply postCSS fixes like autoprefixer and minifying:
-                        loader: "postcss-loader"
+                        loader: "postcss-loader", 
+                        options: {
+                            plugins: () => [autoprefixer()]
+                        }
                     },
                     {
                         // 1. First loader transforms SASS to vanilla CSS:
@@ -75,7 +77,8 @@ module.exports = {
     plugins: [
         // Filename for the stylesheet bundle:
         new MiniCssExtractPlugin({
-            filename: "bundle.prod.css"
+            filename: 'bundle.[name].css'
+            // (The [name] is related to entry.name in webpack.prod & webpack.dev)
         }), 
         // Clean the output.path directory:
         new CleanWebpackPlugin()
