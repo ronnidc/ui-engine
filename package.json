@@ -6,17 +6,40 @@
   "author": "ronnidc & mortenhoffmanndoff",
   "license": "MIT",
   "scripts": {
+    "setup": "npm i",
     "dev": "nuxt",
     "build-nuxt": "nuxt build",
     "start-nuxt": "nuxt start",
-    "generate": "nuxt generate -c nuxt.config.generate.build.js",
-    "build": "npm run generate"
+    "generate": "nuxt generate",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build": "echo \"No build mode specified. Please run build-prod or build-dev. Now running a production build as fallback:\" && npm run build-prod"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "import-glob": "^1.5.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2"
-  }
+    "node-sass-glob-importer": "^5.3.2",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }, 
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions", 
+    "not dead"
+  ]
 }

@@ -1,0 +1,5 @@
+// Import global styles:
+@import './global/styles/global.scss';
+
+// Dynamically import all components : 
+@import './components/**/*.scss';
