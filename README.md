@@ -1,4 +1,4 @@
-# UI Engine
+# ui-engine
 
 > A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
@@ -8,29 +8,40 @@ Create prototypes fast with Nuxt vue-templates, SCSS, ES6 - using Hot Module Rep
 
 ``` bash
 # Install dependencies
-$ npm install
+npm run setup
 
 # Serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 ```
 
-## Build for production
+## Build for production `npm run ....`
 
-Genrate HTML output and build bundles for production
+Genrate HTML output and build bundles for production. 
+
+Prerequisite: Nothing but [node.js](https://nodejs.org/)
 
 ``` bash
 
 # Install dependencies
-$ npm run setup
+npm run setup
 
 # Build minified css & js bundles for production
-$ npm run build-prod
+npm run build-prod
 
 # (Build css & js bundles without minification)
-$ npm run build-dev
+npm run build-dev
 
 # Static Generated Prototype (Pre-rendered) to /dist/
-$ npm run generate
+npm run generate
+
+```
+
+Optional tasks
+
+``` bash
+
+# Delete the dist directory
+npm run clean
 
 ```
 
@@ -45,18 +56,21 @@ dist/bundles/bundle.prod.css // Global & Component styles
 
 The file `ui-engine/package-scripts.json` contains npm scripts which makes it possible to build the bundles inside the `ui-engine` directory from a parent directory (usually solution root `/`). 
 
-For this to work, the `package-scripts.json` file should be moved outside of `ui-engine` and be renamed to `package.json`. 
+For this to work, the [package-scripts.json](./package-scripts.json) file should be moved outside of `ui-engine` and be renamed to `package.json`. 
 
 If the parent directory already has a package.json file the script sections content from `ui-engine/package-scripts.json` can be copied to the existing `/package.json`.
 
 *The point is - with this setup it doesn't matter if you run the npm scripts from the solution root or from the ui-engine directory. Both ways will do the exactely same thing.*
 
+### Hidden files
+
+- For a clean overview in the VS Code file explorer some directories and files are hidden by `"files.exclude":` in `settings.json` - including the *[settings.json](.vscode/settings.json)* file itself.
+
 ____
 
 ## Notes
-- Some directories are hidden in the VS Code file explorer by `"files.exclude":` in `settings.json` - including *[settings.json](.vscode/settings.json)*.
 
-- Have a look at [css modules in nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will it work with the backenders markup?
+- Have a look at [css modules for nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will this work with the backenders markup?
 
 ### Nuxt
 
