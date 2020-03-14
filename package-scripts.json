@@ -1,14 +1,15 @@
 {
   "name": "ui-engine-build-scripts",
   "version": "1.0.0",
-  "description": "generate static markup & build bundles for production",
   "author": "ronnidc & mortenhoffmanndoff",
+  "description": "Optionally: Move these scrips to the www root package.json",
   "scripts": {
     "setup": "cd ui-engine && npm run setup",
     "dev": "cd ui-engine && npm run dev",
     "generate": "cd ui-engine && npm run generate",
     "build-dev": "cd ui-engine && npm run build-dev",
     "build-prod": "cd ui-engine && npm run build-prod",
-    "build": "cd ui-engine && npm run build"
+    "build": "cd ui-engine && npm run build",
+    "clean": "cd ui-engine && npm run clean"
   }
 }

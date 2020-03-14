@@ -1,22 +1,21 @@
 {
   "name": "ui-engine",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": "https://github.com/ronnidc/ui-engine/",
   "description": "A SSG for prototyping the UI & generate asset bundles for production. Based on Vue, Nuxt and Webpack.",
   "author": "ronnidc & mortenhoffmanndoff",
   "license": "MIT",
   "scripts": {
-    "setup": "npm i",
-    "dev": "nuxt",
-    "build-nuxt": "nuxt build",
-    "start-nuxt": "nuxt start",
-    "generate": "nuxt generate",
-    "build-dev": "webpack --config webpack.dev.js",
-    "build-prod": "webpack --config webpack.prod.js",
-    "build": "echo \"No build mode specified. Please run build-prod or build-dev. Now running a production build as fallback:\" && npm run build-prod"
+    "setup": "node echo \"Installing dependencies..\" --font-color 32 && npm i",
+    "dev": "node echo \"The ui-engine with Vue templates, SCSS, ES6 & Hot Module Replacement is warming up..\" --font-color 36 && nuxt",
+    "generate": "node echo \"Generate static prototype starting..\" --font-color 32 && nuxt generate",
+    "build-dev": "node echo \"Build for production starting..\" --font-color 32 && webpack --config webpack.dev.js",
+    "build-prod": "node echo \"Build for development starting..\" --font-color 32 && webpack --config webpack.prod.js",
+    "build": "node echo \"No build mode specified! Please run build-prod or build-dev. Now running a production build as fallback:\" --font-color 35 && npm run build-prod",
+    "clean": "node echo \"Deleting the /dist/ directory..\" --font-color 32 && rimraf dist/"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.11.0",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
