@@ -1,3 +1,5 @@
+import * as config from './config.js';
+
 export default {
     mode: 'universal',
 
@@ -8,7 +10,9 @@ export default {
     },
 
     router: {
-        //base: '/poc/ui-engine/'
+        base: process.env.NODE_ENV === 'production'
+            ? config.PRODUCTION_BASE_PATH || '/'
+            : config.BASE_PATH || '/'
     },
 
     // The <head> of <html>
