@@ -1,8 +1,10 @@
-# UI Engine (nuxt)
+# UI Engine
 
-> A tool based on Vue.js & Nuxt for the purpose of implementing the UI, building static prototypes & generate asset bundles for production.
+> A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
-## Developemnt
+## Develop prototypes
+
+Create prototypes fast with Nuxt vue-templates, SCSS, ES6 - using Hot Module Repacement. 
 
 ``` bash
 # Install dependencies
@@ -12,14 +14,22 @@ $ npm install
 $ npm run dev
 ```
 
-## Build and Deployment Setup 
+## Build for production
+
+Genrate HTML output and build bundles for production
 
 ``` bash
 
 # Install dependencies
-$ npm install
+$ npm run setup
 
-# Static Generated Deployment (Pre-rendered) to /dist/
+# Build minified css & js bundles for production
+$ npm run build-prod
+
+# (Build css & js bundles without minification)
+$ npm run build-dev
+
+# Static Generated Prototype (Pre-rendered) to /dist/
 $ npm run generate
 
 ```
@@ -27,46 +37,34 @@ $ npm run generate
 The following files are to be included in production:
 
 ```js
-dist/_nuxt/pages/other.scripts.prod.js // components on the page "other"
-dist/_nuxt/pages/semler.scripts.prod.js // components on the page "semler"
-dist/_nuxt/app.styles.prod.css // Global styles
-dist/_nuxt/components.styles.prod.css // Component styles
+dist/bundles/bundle.prod.js // Components scripts
+dist/bundles/bundle.prod.css // Global & Component styles
 ```
 
-## OR build for Server-Side Rendered Deployment (Universal SSR)
+### About that `package-scripts.json` file
 
-``` bash
-$ npm run build-ssr
-$ npm run start-ssr
-```
+The file `ui-engine/package-scripts.json` contains npm scripts which makes it possible to build the bundles inside the `ui-engine` directory from a parent directory (usually solution root `/`). 
 
-____
-## Documentation
+For this to work, the `package-scripts.json` file should be moved outside of `ui-engine` and be renamed to `package.json`. 
 
-> For detailed explanation: [Nuxt.js docs](https://nuxtjs.org).
+If the parent directory already has a package.json file the script sections content from `ui-engine/package-scripts.json` can be copied to the existing `/package.json`.
+
+*The point is - with this setup it doesn't matter if you run the npm scripts from the solution root or from the ui-engine directory. Both ways will do the exactely same thing.*
 
 ____
 
-## ToDo
-
-- Setup Webpack to output a css-bundle and a js-bundle on `$ npm run build-prod` for the traditional server-side website in production. *Maybe it should work alongside with the `$ nuxt generate` script.* 
-
-- The bundles should be named __*app.css*__ and __*app.js*__ and not ~~*main.js*~~ or ~~*main.css*~~.
-
-____
-
-### Notes
-- *(Removed empty directories: `/store`, `/plugins`, `/middleware`, `assets`. Add later if needed)*
-
-- Some directories in are hidden in the file explorer by `"files.exclude":` in vscode's workspace `settings.json` - including *[settings.json](.vscode/settings.json)*.
-
-- Images should be stored in /src/assets/ where from [they will be compiled](https://nuxtjs.org/guide/assets#webpacked). (Should we rather have them in the component directories?) 
-
-- bundle names [https://github.com/nuxt/nuxt.js/issues/4926](https://github.com/nuxt/nuxt.js/issues/4926)
+## Notes
+- Some directories are hidden in the VS Code file explorer by `"files.exclude":` in `settings.json` - including *[settings.json](.vscode/settings.json)*.
 
 - Have a look at [css modules in nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will it work with the backenders markup?
 
-## Status:
+### Nuxt
+
+> For detailed explanation: [Nuxt.js docs](https://nuxtjs.org).
+
+### Status - ui-engine deployment
+
+The ui-engine has an online preview with continuous deployment
 
 > Continuous deploy preview of `master` [vue-engine.netlify.app](https://vue-engine.netlify.app/)
 

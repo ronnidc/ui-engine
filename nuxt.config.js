@@ -1,11 +1,17 @@
-
 export default {
     mode: 'universal',
 
     srcDir: 'src/',
-    /*
-    ** Headers of the page
-    */
+
+    generate: {
+        dir: './dist/generated-prototype',
+    },
+
+    router: {
+        //base: '/poc/ui-engine/'
+    },
+
+    // The <head> of <html>
     head: {
         title: process.env.npm_package_name || '',
         meta: [
@@ -17,34 +23,28 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
     },
-    /*
-    ** Customize the progress-bar color
-    */
-    loading: { color: '#f00' },
-    /*
-    ** Global CSS
-    */
+
+    // Global CSS
     css: [
         '@/global/styles/global.scss',
     ],
-    /*
-    ** Plugins to load before mounting the App
-    */
-    plugins: [
-    ],
-    /*
-    ** Nuxt.js dev-modules
-    */
-    buildModules: [
-    ],
-    /*
-    ** Nuxt.js modules
-    */
-    modules: [
-    ],
-    /*
-    ** Build configuration
-    */
+
+    // Build configuration
     build: {
+        // Extract CSS from the html 
+        // when generating a prototype output for production
+        extractCSS:  process.env.NODE_ENV === 'production',
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    styles: {
+                        name: 'styles',
+                        test: /\.(css|vue)$/,
+                        chunks: 'all',
+                        enforce: true
+                    }
+                }
+            }
+        }
     }
 }
