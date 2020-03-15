@@ -85,19 +85,32 @@ ____
 
 ## Notes
 
+Some notes about the ui-engine
+
+### Todo
 - Have a look at [css modules for nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815). Will this work with the markup implemented by the Backend Department?
 
 ### Nuxt
 
+Documentation for Nuxt
+
 > For detailed explanation: [Nuxt.js docs](https://nuxtjs.org).
 
-### Status - ui-engine deployment
+### Deployment status: ui-engine
 
-The ui-engine has an online preview with continuous deployment
+The ui-engines repository has an online preview with continuous deployment
 
 > Continuous deploy preview of `master` [ui-engine.netlify.app](https://ui-engine.netlify.app/)
 
 > Continuous build and deploy status: [![Netlify Status](https://api.netlify.com/api/v1/badges/556a9a47-583d-4fec-b77e-2e3d27452050/deploy-status)](https://app.netlify.com/sites/vue-engine/deploys) 
+
+____
+
+## Roadmap
+
+- Add font feature to webpack
+- (Maybe add image feature to webpack)
+- Register ui-engine as a npm module
 
 ____
 
