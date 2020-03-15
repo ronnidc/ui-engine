@@ -85,7 +85,7 @@ ____
 
 ## Notes
 
-- Have a look at [css modules for nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815) Will this work with the backenders markup?
+- Have a look at [css modules for nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815). Will this work with the markup implemented by the Backend Department?
 
 ### Nuxt
 
