@@ -2,16 +2,25 @@
 
 > A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
-## Develop prototypes
+## Install it
+``` bash
+# 1. Navigate to the projects web root
+cd my-website
+
+# 2. Install the ui-engine it a subdirectory and install dependencies
+npx degit ronnidc/ui-engine ui-engine && cd ui-engine && npm run setup
+```
+
+## Develop or view prototypes
 
 Create prototypes fast with Nuxt vue-templates, SCSS, ES6 - using Hot Module Repacement. 
 
 ``` bash
-# Install dependencies
-npm run setup
-
 # Serve with hot reload at localhost:3000
 npm run dev
+
+# (Serve and open)
+npm run dev & open http://localhost:3000
 ```
 
 ## Build for production `npm run ....`
