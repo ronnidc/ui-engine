@@ -86,6 +86,7 @@ ____
 ## Roadmap
 
 - Add font feature to webpack
+- Add icon feature to webpack than supports icons living alongside the component!..
 - (Maybe add image feature to webpack)
 - Register ui-engine as a npm module
 
