@@ -93,6 +93,7 @@ ____
 
 ## Todo
 - Have a look at [css modules for nuxt](https://dev.to/fridanyvall/css-modules-in-nuxt-js-815). Will this work with the markup implemented by the Backend Department?
+- Have a look at [Custom property fallback values](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Custom_property_fallback_values) for __css variables__
 
 ## Nuxt
 
