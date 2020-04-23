@@ -1,0 +1,179 @@
+// https://codepen.io/ronnidc/pen/gOageoK
+.icon-button {
+    appearance: none;
+    background: none;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 1em calc(1.5em + 32px) 0.9em 1.5em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 200ms ease-in-out;
+    transition-property: background-color, color;
+    border-color: var(--color-dark-gray);
+    color: var(--color-dark-gray);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: var(--color-dark-gray);
+        color: #fff;
+    }
+
+    &::before,
+    &::after {
+        background: center / 24px 24px no-repeat;
+        border-radius: 100em;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 48px;
+    }
+
+    &::after {
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    // -- DOWNLOAD --
+    &.icon-style-download {
+        &::before {
+            background-image: get-icon("download", rgb(100,100,100)); // default gray
+        }
+        // -- orange --
+        &.color-style-orange {
+            border-color: rgb(255,69,0);
+            color: rgb(255,69,0);
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: rgb(255,69,0);
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("download", rgb(100,100,100));
+            }
+        }
+        // -- black --
+        &.color-style-black {
+            border-color: #000000;
+            color: #000000;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: #000000;
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("download", #000000);
+            }
+        }
+        &::after {
+            background-image: get-icon("download", #fff); // The ", #fff" isn't strictly necessary.
+        }
+    }
+
+
+    // -- EXTERNAL LINK --
+    &.icon-style-external {
+        &::before {
+            background-image: get-icon("external", rgb(100,100,100)); // default gray
+        }
+
+        // -- orange --
+        &.color-style-orange {
+            border-color: rgb(255,69,0);
+            color: rgb(255,69,0);
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: rgb(255,69,0);
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("external", rgb(255,69,0));
+            }
+        }
+
+        // -- black --
+        &.color-style-black {
+            border-color: #000000;
+            color: #000000;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: #000000;
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("external", #000000);
+            }
+        }
+        &::after {
+            background-image: get-icon("external");
+        }
+    }
+
+
+    // -- NEXT ARROW --
+    &.icon-style-next {
+        &::before {
+            background-image: get-icon("next", rgb(100,100,100)); // default gray
+        }
+
+        // -- orange --
+        &.color-style-orange {
+            border-color: rgb(255,69,0);
+            color: rgb(255,69,0);
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: rgb(255,69,0);
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("next", rgb(255,69,0));
+            }
+        }
+        
+        // -- black --
+        &.color-style-black {
+            border-color: #000000;
+            color: #000000;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: #000000;
+                color: #fff;
+            }
+            &::before {
+                background-image: get-icon("next", #000000);
+            }
+        }
+        &::after {
+            background-image: get-icon("next");
+        }
+    }
+}

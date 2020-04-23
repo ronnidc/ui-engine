@@ -15,6 +15,10 @@ export default {
             : config.BASE_PATH || '/'
     },
 
+    buildModules: [
+        '@nuxtjs/style-resources'
+    ],
+
     // The <head> of <html>
     head: {
         title: process.env.npm_package_name || '',
@@ -25,6 +29,13 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        ]
+    },
+
+    // Global sass files
+    styleResources: {
+        scss: [
+        './global/styles/global.scss' // use underscore "_" & also file extension ".scss"
         ]
     },
 
