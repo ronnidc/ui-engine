@@ -17,17 +17,17 @@
     "ssr-start": "node echo \"Starting Server-Side Rendered preview (Universal SSR)..\" --font-color 34 && nuxt start"
   },
   "dependencies": {
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.12.2",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@nuxtjs/style-resources": "^1.0.0",
-    "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.0.6",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.4.2",
+    "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
     "import-glob": "^1.5.0",
@@ -35,9 +35,9 @@
     "node-sass": "^4.14.0",
     "node-sass-glob-importer": "^5.3.2",
     "postcss-loader": "^3.0.0",
-    "sass": "^1.26.2",
+    "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.42.0",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
   },
