@@ -9,7 +9,7 @@
             <li><a href="https://www.vuemastery.com/?ref=nuxt" target="_blank" rel="noreferrer">Vue Mastery</a></li>
             <li><a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noreferrer">Nuxt Github</a></li>
             <li><a href="https://github.com/ronnidc/vue-engine" target="_blank" rel="noreferrer">Repository for this site</a></li>
-            <li><a href="https://template.nuxtjs.org/" target="_blank" rel="noreferrer">Play with Nuxt online</a></li>
+            <li><a href="https://codesandbox.io/s/github/ronnidc/ui-engine" target="_blank" rel="noreferrer">Play with ui-engine @ codesandbox</a></li>
         </ul>
     </footer>
 </template>
