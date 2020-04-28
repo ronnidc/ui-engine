@@ -8,7 +8,7 @@
   "scripts": {
     "setup": "node echo \"Installing dependencies..\" --font-color 32 && npm i",
     "dev": "node echo \"The ui-engine with Vue templates, SCSS, ES6 & Hot Module Replacement is warming up..\" --font-color 36 && nuxt",
-    "dev:ip": "node echo \"The ui-engine with Vue templates, SCSS, ES6 & Hot Module Replacement is warming up..\" --font-color 36 && NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
+    "dev:host": "node echo \"The ui-engine with Vue templates, SCSS, ES6 & Hot Module Replacement is warming up..\" --font-color 36 && NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
     "generate": "node echo \"Generating static prototypes..\" --font-color 32 && nuxt generate",
     "build-dev": "node echo \"Building dev bundles..\" --font-color 32 && webpack --config webpack.dev.js",
     "build-prod": "node echo \"Building production bundles..\" --font-color 32 && webpack --config webpack.prod.js",
