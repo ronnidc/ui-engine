@@ -6,6 +6,9 @@
         <nuxt-link to="/semler" class="navigation__link">
             Mobility Tech
         </nuxt-link>
+        <nuxt-link to="/image" class="navigation__link">
+            Image
+        </nuxt-link>
         <nuxt-link to="/why" class="navigation__link">
             Why
         </nuxt-link>
