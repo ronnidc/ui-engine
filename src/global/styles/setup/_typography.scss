@@ -12,13 +12,13 @@ $font-weight-black: 900;
 // -- ExtraLight -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-ExtraLight.ttf");
+	src: url("/fonts/Muli-ExtraLight.ttf");
 	font-style: normal;
 	font-weight: $font-weight-extra-light;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-ExtraLightItalic.ttf");
+	src: url("/fonts/Muli-ExtraLightItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-extra-light;
 }
@@ -26,13 +26,13 @@ $font-weight-black: 900;
 // -- Light -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-Light.ttf");
+	src: url("/fonts/Muli-Light.ttf");
 	font-style: normal;
 	font-weight: $font-weight-light;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-LightItalic.ttf");
+	src: url("/fonts/Muli-LightItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-light;
 }
@@ -40,13 +40,13 @@ $font-weight-black: 900;
 // -- Regular -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-Regular.ttf");
+	src: url("/fonts/Muli-Regular.ttf");
 	font-style: normal;
 	font-weight: $font-weight-regular;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-RegularItalic.ttf");
+	src: url("/fonts/Muli-RegularItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-regular;
 }
@@ -54,13 +54,13 @@ $font-weight-black: 900;
 // -- Medium -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-Medium.ttf");
+	src: url("/fonts/Muli-Medium.ttf");
 	font-style: normal;
 	font-weight: $font-weight-medium;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-MediumItalic.ttf");
+	src: url("/fonts/Muli-MediumItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-medium;
 }
@@ -68,13 +68,13 @@ $font-weight-black: 900;
 // -- SemiBold -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-SemiBold.ttf");
+	src: url("/fonts/Muli-SemiBold.ttf");
 	font-style: normal;
 	font-weight: $font-weight-semi-bold;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-SemiBoldItalic.ttf");
+	src: url("/fonts/Muli-SemiBoldItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-semi-bold;
 }
@@ -82,13 +82,13 @@ $font-weight-black: 900;
 // -- Bold -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-Bold.ttf");
+	src: url("/fonts/Muli-Bold.ttf");
 	font-style: normal;
 	font-weight: $font-weight-bold;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-BoldItalic.ttf");
+	src: url("/fonts/Muli-BoldItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-bold;
 }
@@ -96,13 +96,13 @@ $font-weight-black: 900;
 // -- ExtraBold -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-ExtraBold.ttf");
+	src: url("/fonts/Muli-ExtraBold.ttf");
 	font-style: normal;
 	font-weight: $font-weight-extra-bold;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-ExtraBoldItalic.ttf");
+	src: url("/fonts/Muli-ExtraBoldItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-extra-bold;
 }
@@ -110,13 +110,13 @@ $font-weight-black: 900;
 // -- Black -- //
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-Black.ttf");
+	src: url("/fonts/Muli-Black.ttf");
 	font-style: normal;
 	font-weight: $font-weight-black;
 }
 @font-face {
 	font-family: Muli;
-	src: url("~assets/fonts/Muli/Muli-BlackItalic.ttf");
+	src: url("/fonts/Muli-BlackItalic.ttf");
 	font-style: italic;
 	font-weight: $font-weight-black;
 }
