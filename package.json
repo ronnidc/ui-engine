@@ -1,6 +1,6 @@
 {
   "name": "ui-engine",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": "https://github.com/ronnidc/ui-engine/",
   "description": "A SSG for prototyping the UI & generate asset bundles for production. Based on Vue, Nuxt and Webpack.",
   "author": "ronnidc & mortenhoffmanndoff",
@@ -18,12 +18,14 @@
     "ssr-start": "node echo \"Starting Server-Side Rendered preview (Universal SSR)..\" --font-color 34 && nuxt start"
   },
   "dependencies": {
-    "nuxt": "2.12.2",
-    "minimist": "1.2.5"
+    "google-maps-api-loader": "1.1.1",
+    "minimist": "1.2.5",
+    "nuxt": "2.12.2"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.5",
+    "@ivanv/vue-collapse-transition": "0.2.1",
     "@nuxtjs/style-resources": "1.0.0",
     "autoprefixer": "9.7.6",
     "babel-loader": "8.1.0",
