@@ -12,10 +12,10 @@ module.exports = merge(common, {
     // Production mode is optimizing/compressing the bundles for production. 
     mode: 'production',
 
-    // Path to your entry point. From here Webpack will begin its work.
+    // Path to your entry points. From here Webpack will begin its work.
     entry: { 
-        prod: './src/entry.default.js' 
-        // (The "prod:" part names the production bundle-files)
+        audi: './src/entry.brand.audi.js',
+        seat: './src/entry.brand.seat.js'
     },
 
 });
