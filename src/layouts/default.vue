@@ -16,6 +16,7 @@
         Footer
     },
     head: {
+        // https://github.com/nuxt/nuxt.js/issues/3877#issuecomment-622596528
         bodyAttrs: {
             class: "theme-audi"
         }
