@@ -12,7 +12,7 @@ $font-weight-black: 900;
 // -- ExtraLight -- //
 @font-face {
 	font-family: Muli;
-	src: url("#{$basepath}#{$basepath}fonts/Muli-ExtraLight.ttf");
+	src: url("#{$basepath}fonts/Muli-ExtraLight.ttf");
 	font-style: normal;
 	font-weight: $font-weight-extra-light;
 }
