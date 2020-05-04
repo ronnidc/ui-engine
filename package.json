@@ -1,6 +1,6 @@
 {
   "name": "ui-engine",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": "https://github.com/ronnidc/ui-engine/",
   "description": "A SSG for prototyping the UI & generate asset bundles for production. Based on Vue, Nuxt and Webpack.",
   "author": "ronnidc & mortenhoffmanndoff",
@@ -25,7 +25,6 @@
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.5",
-    "@ivanv/vue-collapse-transition": "0.2.1",
     "@nuxtjs/style-resources": "1.0.0",
     "autoprefixer": "9.7.6",
     "babel-loader": "8.1.0",
