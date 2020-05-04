@@ -1,5 +1,5 @@
 <template>
-    <img src="/images/logo.svg" alt="ui-engine logo" class="logo" />
+    <img src="images/logo.svg" alt="ui-engine logo" class="logo" />
 </template>
 
 
