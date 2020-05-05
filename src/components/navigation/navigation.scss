@@ -19,4 +19,11 @@
             margin-right: 0;
         }
     }
+    &__spacer {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: var(--font-family-primary);
+        color: var(--color-default);
+    }
 }

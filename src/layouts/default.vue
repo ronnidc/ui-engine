@@ -14,20 +14,11 @@
     components: {
         Header,
         Footer
-    },
-    head: {
-        // https://github.com/nuxt/nuxt.js/issues/3877#issuecomment-622596528
-        bodyAttrs: {
-            class: "theme-audi"
-        }
     }
     };
 </script>
 
 <style lang="scss">
-    @import "~/global/styles/themes/audi/theme.audi.scss";
-    @import "~/global/styles/themes/seat/theme.seat.scss";
-
     .layout-default {
         min-height: 100%;
         display: grid;

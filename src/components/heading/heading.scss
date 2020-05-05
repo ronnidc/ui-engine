@@ -5,6 +5,7 @@
         font-weight: 700;
         font-size: 80px;
         letter-spacing: 1px;
+        color: var(--color-default);
 
         &.huge {
             @media screen and (min-width: 992px) {
@@ -23,5 +24,6 @@
         padding-bottom: 15px;
         max-width: 992px;
         margin: auto;
+        color: var(--color-default);
     }
 }

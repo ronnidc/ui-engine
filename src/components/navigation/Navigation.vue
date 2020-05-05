@@ -12,8 +12,12 @@
         <nuxt-link to="/why" class="navigation__link">
             Why
         </nuxt-link>
-        <nuxt-link to="/brands" class="navigation__link">
+        <nuxt-link to="/brand-page" class="navigation__link">
             Brands
+        </nuxt-link>
+        <span class="navigation__spacer">&</span>
+        <nuxt-link to="/theme-page" class="navigation__link">
+            Themes
         </nuxt-link>
         <nuxt-link to="/documentation" class="navigation__link">
             Documentation
