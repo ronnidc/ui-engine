@@ -1,9 +1,9 @@
-// --- BRAND CONFIGURATION --- //
+// --- Theme configiration --- //
 
-// Brand: Set which brand you want do work on during local development:
+// Theme: Set which theme name you want do work on during local development:
 export let theme = 'audi';
 
-// Availiable brands: 
+// Availiable theme names: 
 // - audi
 // - seat
 // - 

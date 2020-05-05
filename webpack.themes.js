@@ -14,8 +14,8 @@ module.exports = merge(common, {
 
     // Path to your entry points. From here Webpack will begin its work.
     entry: { 
-        audi: './src/entry.brand.audi.js',
-        seat: './src/entry.brand.seat.js'
+        audi: './src/entry.theme.audi.js',
+        seat: './src/entry.theme.seat.js'
     },
 
 });
