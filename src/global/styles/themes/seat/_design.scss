@@ -6,6 +6,11 @@ body.theme-seat {
     .heading {
         .title {
             // title overrides here
+            font-family: var(--font-family-primary);
+        }
+        .subtitle {
+            // subtitle overrides here
+            font-family: var(--font-family-primary);
         }
     }
 }

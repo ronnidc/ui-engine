@@ -1,0 +1,20 @@
+// Seat
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// -- Regular -- //
+@font-face {
+	font-family: Seat;
+	src: url("/fonts/themes/seat/SeatBcn-Regular.woff");
+	font-style: normal;
+	font-weight: $font-weight-regular;
+}
+
+// -- Bold -- //
+@font-face {
+	font-family: Seat;
+	src: url("/fonts/themes/seat/SeatBcn-Bold.woff");
+	font-style: normal;
+	font-weight: $font-weight-bold;
+}

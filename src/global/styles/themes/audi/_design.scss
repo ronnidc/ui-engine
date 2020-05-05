@@ -3,9 +3,18 @@ body.theme-audi {
     .brand-logo {
         // logo overrides here
     }
+    .navigation__link,
+    .navigation__spacer {
+        font-size: 16px;
+    }
     .heading {
         .title {
             // title overrides here
+            font-family: var(--font-family-primary);
+        }
+        .subtitle {
+            // subtitle overrides here
+            font-family: var(--font-family-primary);
         }
     }
 }

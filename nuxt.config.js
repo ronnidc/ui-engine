@@ -12,7 +12,9 @@ export default {
     router: {
         base: process.env.NODE_ENV === 'production'
             ? config.PRODUCTION_BASE_PATH || '/'
-            : config.BASE_PATH || '/'
+            : config.BASE_PATH || '/', 
+        linkActiveClass: 'is-active-parent',
+        linkExactActiveClass: 'is-active-exact',
     },
 
     buildModules: [
