@@ -4,6 +4,7 @@
 
     &__link {
         display: inline-block;
+        position: relative;
         text-decoration: none;
         padding: 10px 10px;
         font-size: 20px;
@@ -12,11 +13,42 @@
         transition: background-color .3s, border .3s, color .3s;
 
         &:hover {
-            color: var(--color-orange);
+            color: var(--color-dark-gray);
         }
     
         &:last-child {
             margin-right: 0;
         }
+
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: initial;
+            position: absolute;
+            bottom: .4em;
+            left: 0;
+            transition: background-color .7s ease,width .5s ease,left .5s ease;
+        }
+
+        &.is-active-exact {
+            color: var(--color-default);
+            cursor: default;
+
+            &:after {
+                background-color: var(--color-default);
+                width: calc(100% - 1em);
+                left: .5em;
+            }
+        }
+    }
+    &__spacer {
+        display: inline-block;
+        margin: 0 -6px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: var(--font-family-primary);
+        color: var(--color-default);
     }
 }

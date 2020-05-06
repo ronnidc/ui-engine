@@ -11,19 +11,17 @@
     import Footer from "~/components/footer/Footer.vue";
 
     export default {
-        components: {
-            Header, 
-            Footer
-        }
+    components: {
+        Header,
+        Footer
+    }
     };
 </script>
 
 <style lang="scss">
-
     .layout-default {
         min-height: 100%;
         display: grid;
         grid-template-rows: auto 1fr auto;
     }
-
 </style>

@@ -15,6 +15,13 @@
         <nuxt-link to="/documentation" class="navigation__link">
             Documentation
         </nuxt-link>
+        <nuxt-link to="/brand-page" class="navigation__link">
+            Brands
+        </nuxt-link>
+        <span class="navigation__spacer">&</span>
+        <nuxt-link to="/theme-page" class="navigation__link">
+            Themes
+        </nuxt-link>
     </nav>
 </template>
 

@@ -1,17 +1,17 @@
 {
     "files.exclude": {
-        "**/package.json": false,
-        "**/webpack.*.js": false,
-        "**/nuxt.config.js": false,
-        "**/src/webpack.entry.*": false,
-        "**/.editorconfig": false,
-        "**/.vscode": false,
-        "**/jsconfig.json": false,
-        "**/package-scripts.json": false,
-        "**/.gitignore": false,
-        "**/echo.js": false,
-        "**/.nuxt": false,
-        "**/package-lock.json": false,
-        "**/node_modules": false
+        "**/package.json": true,
+        "**/webpack.*.js": true,
+        "**/nuxt.config.js": true,
+        "**/src/entry.default.*": true,
+        "**/.editorconfig": true,
+        "**/.vscode": true,
+        "**/jsconfig.json": true,
+        "**/package-scripts.json": true,
+        "**/.gitignore": true,
+        "**/echo.js": true,
+        "**/.nuxt": true,
+        "**/package-lock.json": true,
+        "**/node_modules": true
     }
 }

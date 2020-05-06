@@ -1,0 +1,20 @@
+// Audi
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// -- Regular -- //
+@font-face {
+	font-family: Audi;
+	src: url("/fonts/themes/audi/auditype-extendednormal.woff");
+	font-style: normal;
+	font-weight: $font-weight-regular;
+}
+
+// -- Bold -- //
+@font-face {
+	font-family: Audi;
+	src: url("/fonts/themes/audi/auditype-extendedbold.woff");
+	font-style: normal;
+	font-weight: $font-weight-bold;
+}

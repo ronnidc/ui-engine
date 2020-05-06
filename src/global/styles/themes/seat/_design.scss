@@ -1,0 +1,16 @@
+// Seat
+body.theme-seat {
+    .theme-logo {
+        max-width: 200px;
+    }
+    .heading {
+        .title {
+            // title overrides here
+            font-family: var(--font-family-primary);
+        }
+        .subtitle {
+            // subtitle overrides here
+            font-family: var(--font-family-primary);
+        }
+    }
+}
