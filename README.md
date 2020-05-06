@@ -3,23 +3,23 @@
 > A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
 ## Install it
-``` bash
-# 1. Navigate to the projects web root
+``` js
+// 1. Navigate to the projects web root
 cd my-website
 
-# 2. Install the ui-engine it a subdirectory and install dependencies
-npx degit ronnidc/ui-engine ui-engine && cd ui-engine && npm run setup
+// 2. Install the ui-engine in a subdiretory named ui and install dependencies
+npx degit ronnidc/ui-engine ui && cd ui && npm run setup
 ```
 
 ## Develop or view prototypes
 
 Create prototypes fast with Nuxt vue-templates, SCSS, ES6 - using Hot Module Repacement. 
 
-``` bash
-# Serve with hot reload at localhost:3000
+``` js
+// Serve with hot reload at localhost:3000
 npm run dev
 
-# (Serve and open)
+//(Serve and open)
 npm run dev & open http://localhost:3000
 ```
 
@@ -29,33 +29,36 @@ Genrate HTML output and build bundles for production.
 
 Prerequisite: Nothing but [node.js](https://nodejs.org/)
 
-``` bash
+``` js
 
-# Install dependencies
+// Install dependencies
 npm run setup
 
-# Build minified css & js bundles for production
-npm run build-prod
+// Build minified css & js bundles for production
+npm run build:prod
 
-# (Build css & js bundles without minification)
-npm run build-dev
+// (Build css & js bundles without minification)
+npm run build:dev
 
-# Static Generated Prototype (Pre-rendered) to /dist/
+// Static Generated Prototype (Pre-rendered) to /dist/
 npm run generate
 
 ```
 
 Optional scripts
 
-``` bash
+``` js
 
-# Delete the dist directory
+// Delete the dist directory
 npm run clean
 
-# Build Server-Side Rendered (Universal SSR)
+// (Build css & js bundles when working with themes / multi brand solutions)
+npm run build:themes // This script replace build:prod & build:dev
+
+// Build Server-Side Rendered (Universal SSR)
 npm run ssr-build
 
-# Start Server-Side Rendered preview (Universal SSR)
+// Start Server-Side Rendered preview (Universal SSR)
 npm run ssr-start
 
 ```
