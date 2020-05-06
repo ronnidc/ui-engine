@@ -2,4 +2,4 @@
 export const BASE_PATH = '/';
 
 // Base-path used when exporting the prototype with `npm run generate`:
-export const PRODUCTION_BASE_PATH = '/poc/test4maj/subdir/';
+export const PRODUCTION_BASE_PATH = '/';
