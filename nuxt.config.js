@@ -34,14 +34,14 @@ export default {
         ]
     },
 
-    // Global sass files
+    // Global SASS Resources - No output styles! (This is needed for recognizing sass-variables in components).
     styleResources: {
         scss: [
-        './global/styles/global.scss' // use underscore "_" & also file extension ".scss"
+        './global/styles/_resources.scss' // use underscore "_" & also file extension ".scss"
         ]
     },
 
-    // Global CSS
+    // All Global Styles - to be loaded when running Nuxt. 
     css: [
         '@/global/styles/global.scss',
     ],

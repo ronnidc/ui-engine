@@ -1,10 +1,9 @@
+// Global
+@import "resources"; // SASS variabels and Mixins
+
 // Settings: 
-@import "setup/basepath";
+@import "setup/variables-native-css";
 @import "setup/settings";
-@import "setup/variables";
-@import "setup/mixins";
-@import "setup/icons";
-@import "setup/typography";
 
 // Elements:
 @import "elements/container";
