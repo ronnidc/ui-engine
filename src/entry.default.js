@@ -2,4 +2,4 @@
 import modules from "./components/**/*.js";
 
 // Import Global & Components SCSS:
-import './entry.styles.scss';
+import './entry.default.scss';
