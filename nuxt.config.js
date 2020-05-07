@@ -6,13 +6,13 @@ export default {
     srcDir: 'src/',
 
     generate: {
-        dir: './dist/generated-prototype',
+        dir: './dist/generated-prototype' + config.PRODUCTION_BASE_PATH,
     },
 
     router: {
         base: process.env.NODE_ENV === 'production'
             ? config.PRODUCTION_BASE_PATH || '/'
-            : config.BASE_PATH || '/', 
+            : config.BASE_PATH || '/',
         linkActiveClass: 'is-active-parent',
         linkExactActiveClass: 'is-active-exact',
     },
@@ -37,7 +37,7 @@ export default {
     // Global SASS Resources - No output styles! (This is needed for recognizing sass-variables in components).
     styleResources: {
         scss: [
-        './global/styles/_resources.scss' // use underscore "_" & also file extension ".scss"
+            './global/styles/_resources.scss' // use underscore "_" & also file extension ".scss"
         ]
     },
 
@@ -50,7 +50,7 @@ export default {
     build: {
         // Extract CSS from the html 
         // when generating a prototype output for production
-        extractCSS:  process.env.NODE_ENV === 'production',
+        extractCSS: process.env.NODE_ENV === 'production',
         optimization: {
             splitChunks: {
                 cacheGroups: {
