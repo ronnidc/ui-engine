@@ -2,7 +2,7 @@
   "name": "ui-engine-build-scripts",
   "version": "1.0.0",
   "author": "ronnidc & mortenhoffmanndoff",
-  "description": "Optionally: Move these scrips to the www root package.json",
+  "description": "Move scrips below to the www-root package.json",
   "scripts": {
     "setup": "cd ui-engine && npm run setup",
     "dev": "cd ui-engine && npm run dev",
@@ -12,7 +12,7 @@
     "build:themes": "cd ui-engine && npm run build:themes",
     "build": "cd ui-engine && npm run build",
     "clean": "cd ui-engine && npm run clean",
-    "ssr-build": "cd ui-engine && npm run ssr-build",
-    "ssr-start": "cd ui-engine && npm run ssr-start"
+    "ssr:build": "cd ui-engine && npm run ssr:build",
+    "ssr:start": "cd ui-engine && npm run ssr:start"
   }
 }
