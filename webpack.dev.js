@@ -11,6 +11,7 @@ module.exports = merge(common, {
 
     // Development mode is assuring readability of the bundles content. 
     mode: 'development',
+    devtool: "inline-source-map",
 
     // Path to your entry point. From here Webpack will begin its work.
     entry: { 

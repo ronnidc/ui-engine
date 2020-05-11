@@ -11,6 +11,7 @@ module.exports = merge(common, {
 
     // Production mode is optimizing/compressing the bundles for production. 
     mode: 'production',
+    devtool: "cheap-module-source-map",
 
     // Path to your entry point. From here Webpack will begin its work.
     entry: { 
