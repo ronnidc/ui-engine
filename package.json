@@ -13,7 +13,7 @@
     "build:dev": "node echo \"Building dev bundles..\" --bg-color 40 --font-color 35 && webpack --config webpack.dev.js && node echo \"The build is done :-) \" --bg-color 40 --font-color 32",
     "build:prod": "node echo \"Building production bundles..\" --bg-color 40 --font-color 33 && webpack --config webpack.prod.js && node echo \"The build is done :-) \" --bg-color 40 --font-color 32",
     "build:themes": "node echo \"Building all brand bundles..\" --font-color 32 && webpack --config webpack.themes.js",
-    "build": "node echo \"No build mode specified - Fallback to production build:\" --font-color 35 && npm run build:prod",
+    "build": "node echo \"Build mode not specified - Fallback to production build:\" --font-color 35 && npm run build:prod",
     "clean": "node echo \"Deleting the output directory!\" --font-color 32 && rimraf dist/",
     "ssr:build": "node echo \"Building Server-Side Rendered build (Universal SSR)..\" --font-color 34 && nuxt build",
     "ssr:start": "node echo \"Starting Server-Side Rendered preview (Universal SSR)..\" --font-color 34 && nuxt start"
