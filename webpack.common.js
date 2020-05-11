@@ -1,7 +1,7 @@
 // Webpack DEV
-
 // Require dependencies: 
 const path = require('path');
+const absoluteDistributionPath = './';
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 const autoprefixer = require('autoprefixer');
@@ -46,12 +46,38 @@ module.exports = {
                 // Loaders are applied from right to left(!)
                 use: [
                     {
-                        // 4. This loader extracts css into a separate bundle:
+                        // 5. This loader extracts css into a separate bundle:
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
+                        // 4. This loader replaces the development path to assets with a relative path for production
+                        loader: "string-replace-loader",
+                        options: {
+                            multiple: [
+                                { 
+                                    search: '/images/', 
+                                    replace: absoluteDistributionPath + 'images/', 
+                                    flags: 'g' 
+                                },
+                                { 
+                                    search: '/fonts/', 
+                                    replace: absoluteDistributionPath + 'fonts/', 
+                                    flags: 'g' 
+                                },
+                                { 
+                                    search: '/icons/', 
+                                    replace: absoluteDistributionPath + 'icons/', 
+                                    flags: 'g' 
+                                }
+                            ]
+                        }
+                    },
+                    {
                         // 3. This loader resolves url's and @imports in CSS:
-                        loader: "css-loader"
+                        loader: "css-loader",
+                        // options: {
+                        //     url: '/ui/dist'
+                        // }
                     },
                     {
                         // 2. This loader apply postCSS fixes like autoprefixer and minifying:
@@ -87,7 +113,7 @@ module.exports = {
 
         // Copy static assets to dist
         new CopyWebpackPlugin([
-            { from: 'src/static'}
+            { from: 'src/static' }
         ],
             {
                 ignore: ['*.md', '*.DS_Store'],

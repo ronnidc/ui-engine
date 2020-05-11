@@ -1,6 +1,8 @@
 // Change this basepath to match the one in the file /config.js
 // If you are developing locally you need to use the default BASE_PATH
-// If you are generating you need to use the PRODUCTION_BASE_PATH
+// If you are generating you need to use the PREVIEW_BASE_PATH
+
+// !! Needs to match 'BASE_PATH' or 'PREVIEW_BASE_PATH' in /config.js !! //
 
 $basepath: '/';
 //$basepath: '/poc/test4maj/subdir/';

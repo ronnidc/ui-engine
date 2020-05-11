@@ -6,12 +6,12 @@ export default {
     srcDir: 'src/',
 
     generate: {
-        dir: './dist/generated-prototype' + config.PRODUCTION_BASE_PATH,
+        dir: './dist/generated-prototype' + config.PREVIEW_BASE_PATH,
     },
 
     router: {
         base: process.env.NODE_ENV === 'production'
-            ? config.PRODUCTION_BASE_PATH || '/'
+            ? config.PREVIEW_BASE_PATH || '/'
             : config.BASE_PATH || '/',
         linkActiveClass: 'is-active-parent',
         linkExactActiveClass: 'is-active-exact',
