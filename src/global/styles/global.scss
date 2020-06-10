@@ -1,7 +1,7 @@
-// Global
-@import "resources"; // SASS variabels and Mixins
+// Resources-file: (only SASS variabels, mixins, functions)
+@import "resources";
 
-// Settings: 
+// Setup: 
 @import "setup/variables-native-css";
 @import "setup/settings";
 
