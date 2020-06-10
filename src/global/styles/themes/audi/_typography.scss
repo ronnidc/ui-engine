@@ -7,6 +7,7 @@ $font-weight-bold: 700;
 @font-face {
 	font-family: Audi;
 	src: url("/fonts/themes/audi/auditype-extendednormal.woff");
+	font-display: swap;
 	font-style: normal;
 	font-weight: $font-weight-regular;
 }
@@ -15,6 +16,7 @@ $font-weight-bold: 700;
 @font-face {
 	font-family: Audi;
 	src: url("/fonts/themes/audi/auditype-extendedbold.woff");
+	font-display: swap;
 	font-style: normal;
 	font-weight: $font-weight-bold;
 }
