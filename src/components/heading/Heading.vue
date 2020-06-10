@@ -1,5 +1,5 @@
 <template>
-    <section class="heading" role="heading">
+    <section class="heading">
         <div class="container">
             <h1 :class="'title ' + textsize">{{ title }}</h1>
             <h2 class="subtitle">{{ subtitle }}</h2>
