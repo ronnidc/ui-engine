@@ -1,8 +1,7 @@
 // Resources 
 // Such as SASS variabels, functions and mixins 
 // Only SCSS files with no output !! (Or they will be replicated in the DOM)
-@import "setup/basepath";
-@import "setup/variables-sass";
-@import "setup/mixins";
-@import "setup/icons";
-@import "setup/typography";
+@import "resources/basepath";
+@import "resources/variables-sass";
+@import "resources/mixins";
+@import "resources/icons";
