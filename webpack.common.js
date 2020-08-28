@@ -114,7 +114,12 @@ module.exports = {
         // Copy static assets to dist
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'src/static' }
+                { 
+                    from: 'src/static',
+                    globOptions: {
+                        ignore: ['**/*.md'],
+                    }, 
+                }
             ],
         },
         {
