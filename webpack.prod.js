@@ -15,8 +15,8 @@ module.exports = merge(common, {
 
     // Path to your entry point. From here Webpack will begin its work.
     entry: { 
-        prod: './src/entry.default.js' 
-        // (The "prod:" part names the production bundle-files)
+        default: './src/entry.default.js' 
+        // (The "prod:" part names the production bundle-files. Rename to "prod" or similar if it makes sense.)
     },
 
 });
