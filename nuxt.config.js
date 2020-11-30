@@ -1,7 +1,6 @@
 import * as config from './config.js';
 
 export default {
-    mode: 'universal',
 
     srcDir: 'src/',
 
@@ -64,6 +63,12 @@ export default {
                         enforce: true
                     }
                 }
+            }
+        }, 
+        // Disable HMR messages in the browser console
+        hotMiddleware: {
+            client: {
+                noInfo: true,
             }
         }
     }
