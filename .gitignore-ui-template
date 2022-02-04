@@ -1,0 +1,22 @@
+# ... backend stuff..
+
+
+## --- FRONTEND ASSET OUTPUT -- ##
+
+# macOS local info-file for the Finder app
+.DS_Store
+
+# Assets/Jekyll developer cache directory:
+.jekyll-cache
+
+# Assets/Jekyll build directory:
+assets/__preview-build
+
+# UI/Nuxt temporary developer build directory:
+.nuxt/
+
+# UI/Nuxt build directory:
+ui/build/
+
+# UI/Webpack build directory: 
+ui/dist/
