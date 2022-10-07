@@ -1,4 +1,4 @@
-# ui-engine
+# ui-engine 1.1.0 <em style="color:orange;">Legacy version</em>
 
 > A Static Site Generator (SSG) for prototyping the UI & generate asset bundles for production.
 
